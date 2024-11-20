@@ -6,7 +6,7 @@ from PIL import Image
 import cv2
 from keras.models import load_model
 from flask import Flask, request, render_template
-from urllib.parse import quote as url_quote
+from werkzeug.urls import url_quote
 
 
 app = Flask(__name__)
